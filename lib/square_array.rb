@@ -1,14 +1,16 @@
 def square_array(array)
-  counter = 0
-    
+  counter = 0 
+  new_array = [] 
+
     while array[counter] do
-      puts array[counter]
-      counter += 1
-    end
-end
+      new_element = array[counter] ** 2
+      new_array.push(new_element)
+
+      counter += 1 
+    end  
+
+  return new_array
 
 numbers = [1, 2, 3]
 square_array(numbers)
 
-numbers = [1, 2, 3]
-square_array(numbers)
